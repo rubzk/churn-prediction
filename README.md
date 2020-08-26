@@ -1,8 +1,16 @@
 # churn-prediction
 
+## Conclusion 
+
+Throughout this analysis we could demonstrate the superiority of Catboost against other gradient boosting algorithms. The scoring of Catboost without any hyper parameter tunning was on point. Also with the help of the library SHAP we could find some features that the EDA did not recognize as valuable. From now it will become essential on my tool box for any analysis. Another interesting finding in the analysis is the mention of what kind of strategy are we planning to do with the predictions. Is very important asking us Why are we doing this kind of models? To keep clients or to estimate the loss of the company?.
+
+### Final models score
+
+![](imgs/metrics-gs.png?raw=true "Metrics gs")
+
 ## Background
 
-This kind of analysis are done by companies to determine the likelihood that a customer will churn. This way the company can develop different kind of strategies to diversify promotions to keep customers and also estimate a percentaje of churn which can a be a loss of income for the company. 
+This kind of analysis are done by companies to determine the likelihood that a customer will churn. This way the company can develop different kind of strategies to diversify promotions to keep customers and also estimate a percentaje of churn which can a be a loss of income for the company. The data set of this analysis is from [kaggle](https://www.kaggle.com/blastchar/telco-customer-churn)
 
 
 ## Goal of the analysis
@@ -98,7 +106,7 @@ Since this is a classification problem we are going to train different algorithm
 
 The first training we are going to test the models out-of-the-box with no parameters and see the results.
 
-### Metrics
+### Scores
 
 ![](imgs/metrics-baseline.png?raw=true "Metrics baselines")
 
@@ -137,8 +145,9 @@ We are going to make a basic grid search to see if we can get better results.
 
 #### Parameters
 
+![](imgs/params-gs.png?raw=true "Parameters gs")
 
-####  Metrics
+####  Scores
 
 ![](imgs/metrics-gs.png?raw=true "Metrics gs")
 
